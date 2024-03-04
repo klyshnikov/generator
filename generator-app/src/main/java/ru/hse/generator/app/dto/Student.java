@@ -5,7 +5,7 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 
 import java.io.Serializable;
 
-class Student implements Serializable {
+public class Student implements Serializable {
     private static final long serialVersionUID = 1L;
     public Integer id;
     public String name;
@@ -26,5 +26,9 @@ class Student implements Serializable {
         } catch (JsonProcessingException e) {
             throw new RuntimeException(e);
         }
+    }
+
+    public String toStringCSV(){
+        return this.id.toString()+";" + this.name+";" + this.secondName+";" + this.secondName+";" + this.course+";";
     }
 }
