@@ -15,4 +15,5 @@ include('product-storage-data-api')
 include 'generator-api'
 include 'generator-app'
 include 'generator-client'
+include 'generator-client-starter'
 
