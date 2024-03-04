@@ -1,5 +1,5 @@
 package ru.hse.generator.api;
 
-public class GeneratorApi {
-
+public interface GeneratorApi {
+    String saveStudentsToStorage(String fileFormat);
 }
