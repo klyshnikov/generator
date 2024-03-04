@@ -2,12 +2,18 @@ package ru.hse.generator.app.service;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import lombok.AllArgsConstructor;
+import org.springframework.stereotype.Service;
 import ru.hse.generator.app.dto.Student;
+import ru.hse.generator.storage.api.StorageApi;
+import ru.hse.generator.student.api.StudentApi;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
 
+@Service
+@AllArgsConstructor
 public class GeneratorServiceImpl implements GeneratorService {
 
     StudentApi studentApi;

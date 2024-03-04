@@ -16,4 +16,6 @@ include 'generator-api'
 include 'generator-app'
 include 'generator-client'
 include 'generator-client-starter'
+include 'local-student-api'
+include 'local-storage-api'
 
